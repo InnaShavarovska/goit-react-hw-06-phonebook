@@ -5,9 +5,9 @@ import { setFilter } from 'redux/filterSlice';
 
 const Filter = () => {
   const dispatch = useDispatch();
-  const filter = useSelector(selectFilter);
+  const filters = useSelector(selectFilter);
 
-  const handleFilterChange = filter => dispatch(setFilter(filter));
+  const handleFilterChange = filters => dispatch(setFilter(filters));
   const changeFilter = event => {
     handleFilterChange(event.currentTarget.value);
   };
