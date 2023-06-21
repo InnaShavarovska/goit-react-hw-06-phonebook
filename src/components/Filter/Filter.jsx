@@ -10,6 +10,7 @@ const Filter = () => {
   const handleFilterChange = filters => dispatch(setFilter(filters));
   const changeFilter = event => {
     handleFilterChange(event.currentTarget.value);
+    console.log(filters);
   };
 
   return (
